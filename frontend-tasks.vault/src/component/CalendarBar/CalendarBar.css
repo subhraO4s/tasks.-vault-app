@@ -1,0 +1,43 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.calendar-bar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    inset: 85% 1% 5% 83%;
+    border-radius: 22px;
+    user-select: none;
+}
+.clock-icon{
+    display:flex;
+    position:fixed;
+    background-color: #d28cf8;
+    color: white;
+    inset: 87% 12.5% 7% 84.5%;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.date-time-bar{
+    display: flex;
+    position: fixed;
+    background-color:white;
+    font-family: 'Inter', sans-serif;
+    inset: 87% 2% 7% 88%;
+    border-radius: 12px;
+    font-size: 0.7vw;
+    text-align: center;
+    justify-content: left;
+    padding : 5px 15px;
+    font-weight: 600;
+    letter-spacing: .15rem;
+    line-height: 1.5;
+}
+
+@media (max-width:1000px) {
+    .calendar-bar,
+    .date-time-bar,
+    .clock-icon{
+        display: none;
+    }
+}

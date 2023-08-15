@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.analytics-bar{
+    display: flex;
+    
+    position: fixed;
+    inset: 18% 1% 17% 83%;
+    background-color: white;
+    border-radius: 30px;
+    letter-spacing: .08rem;
+    line-height: 1;
+}
+.analytics-label{
+    background-color: rgba(202, 233, 255, 0.60);
+    display: flex;
+    position: fixed;
+    inset: 20% 2% 70% 84%;
+    border-radius: 20px;
+    padding: 0px 15px;
+    justify-content: left;
+    align-items: center;
+}
+.analytics-label h3{
+    margin-left: 8px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.analytics-label .analytics-icon{
+    display: flex;
+    position: fixed;
+    background-color: #d28cf8;
+    color: white;
+    inset: 22% 3% 72% 94%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.analytics-label .analytics-icon button{
+    padding: 0;
+    border: none;
+    background: none;
+    color: white;
+}
+.comment-box {
+    position: absolute;
+    top: 110%;
+    align-self: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+    color: black;
+    background-color: transparent;
+    font-size: .8vw;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 12px 4px #80CAFF;
+    display: none; /* Hide initially */
+  }
+  
+.analytics-label .analytics-icon:hover .comment-box {
+display: flex; /* Show on hover */
+}
+.analytics-label .analytics-icon:hover{
+    background-color: #aa47df;
+    cursor:pointer;
+}
+.analytics-label .analytics-icon button:hover{
+    cursor:pointer;
+}
+.progress-slab{
+    display: flex;
+    position: fixed;
+    background-color: #CAE9FF;
+    inset: 32% 2.5% 43% 85%;
+    border-radius: 50%;
+    align-items: center;
+
+}
+.progress-bar {
+    display: flex;
+    position: fixed;
+    inset: 34.75% 3.75% 45.25% 86.25%;
+    border-radius: 50%;
+  }
+.progress{
+    display: flex;
+    position: fixed;
+    inset: 39.5% 7% 49.5% 89.75%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.timeline-bar{
+    display: flex;
+    position: fixed;
+    inset: 58% 2% 18% 84%;
+    background-color: transparent;
+    border-radius: 20px;
+    justify-content: center;
+}
+.timeline-bar h3{
+    display: flex;
+    position: fixed;
+    inset: 58% 4% 33% 84%;
+    padding: 8px 24px;
+    background-color: transparent;
+}
+.timeline-bar .timeline-counts{
+    display: flex;
+    position: fixed;
+    inset: 63% 2% 18% 84%;
+    background-color: white;
+    border-radius: 24px;
+    padding: 0px 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.timeline-bar .total{
+    background-color: rgba(128, 200, 251, 0.72);
+    width: calc(50% - 8px); 
+    margin-bottom: 10px;
+}
+
+.timeline-bar .in-progress{
+    background-color:rgba(228, 177, 255, 0.801);
+    width: calc(50% - 8px); 
+    justify-content: center;
+}
+.timeline-bar .completed{
+    background-color:rgba(210, 140, 248, 0.685);
+    width: calc(50% - 8px);
+    margin-bottom: 10px; 
+}
+.timeline-bar .waiting{
+    background-color:rgba(202, 233, 255, 0.75);
+    width: calc(50% - 8px); 
+}
+
+.timeline-bar .total,
+.timeline-bar .in-progress,
+.timeline-bar .completed,
+.timeline-bar .waiting{
+
+    border-radius: 25px;
+
+}
+.timeline-bar .total h4,
+.timeline-bar .in-progress h4,
+.timeline-bar .completed h4,
+.timeline-bar .waiting h4 {
+    text-align: left;
+    padding-top: 15px;
+    font-size: 0.65vw;
+    margin-left: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.01rem;
+}
+
+.vertical-line{
+    padding-left: 12px;
+    padding-top: 5px;
+    height: 21px;
+    left: 50%;
+    margin-left: 17px;
+    margin-top: 7px;
+    font-family: 'Inter', sans-serif;
+    font-size: .85vw;
+    font-weight: 900;
+}
+.timeline-bar .total .vertical-line {
+    border-left: 4px solid rgba(118, 120, 237, 1);
+}
+.timeline-bar .completed .vertical-line {
+    border-left: 4px solid rgba(166, 99, 204, 1);
+}
+.timeline-bar .in-progress .vertical-line {
+    border-left: 4px solid rgba(166, 99, 204, 1);
+}
+.timeline-bar .waiting .vertical-line {
+    border-left: 4px solid rgba(118, 120, 237, 1);
+}
+
+@media (max-width:1000px) {
+    .analytics-bar{
+        display: none;
+    }
+}

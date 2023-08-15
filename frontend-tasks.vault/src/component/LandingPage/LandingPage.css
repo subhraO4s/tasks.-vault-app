@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.landing-page-bg{
+    background-image: url(../assets/landingpagebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    inset: 0% 0% 0% 0%;
+}
+
+.main-landing-page{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    inset: 0% 0% 0% 0%;
+    background: rgba(73, 88, 224, 0.32);
+    backdrop-filter: blur(5.5px);
+    
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 12% 48% 12% 8%;
+    background-color: transparent;
+    overflow-y:hidden;
+}
+.hero-section .app-name{
+    display:flex;
+    position:relative;
+    background-color:transparent;
+    margin: 12px;
+    margin-right: 40%;
+    justify-content:flex-start;
+    padding: 20px;
+    color: #FFF;
+    font-family: Inika;
+    font-size: 2.3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 18.7px;
+}
+.hero-section .app-description{
+    display:flex;
+    position:relative;
+    background-color: transparent;
+    margin: 12px;
+    padding: 7px;
+    padding-left: 20px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.08vw;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 191.023%; /* 30.205px */
+    letter-spacing: 1px;
+}
+.hero-footer-section{
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    margin-left: 34px;
+    margin-top: 3vw;
+}
+.hero-footer-section .app-aboutus,
+.hero-footer-section .app-knowmore{
+    color: white;
+    font-family: Inter;
+    font-size: 1.08vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 191.023%; /* 30.205px */
+    letter-spacing: 1px;
+    border: 1px solid white;
+    padding: 0.4vw;
+    padding-left: 1vw;
+    padding-right: 1.6vw;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.hero-footer-section .app-aboutus:hover,
+.hero-footer-section .app-knowmore:hover,
+.features-section .pro-section-link:hover,
+.features-section .about-section-link:hover{
+    background-color: rgba(147, 129, 255, 0.61);
+}
+.hero-footer-section .app-knowmore-link,
+.features-section .app-home-link,
+.hero-footer-section .app-aboutus-link{
+    text-decoration: none;
+    color: white;
+}
+.features-section{
+    
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.features-section h2{
+    display: flex;
+    align-items: left;
+    font-size: 3.3vw;
+    color: white;
+    font-family: Inika;
+    letter-spacing: 14px;
+    margin: 12px;
+    padding: 20px;
+}
+.features-section ul{
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.features-section li{
+    margin-bottom: 22px;
+    font-size: 1.2vw;
+    color: white;
+}
+.features-section .pro-section-link,
+.features-section .about-section-link{
+    color: white;
+    font-family: Inter;
+    font-size: 1.08vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 191.023%; /* 30.205px */
+    letter-spacing: 1px;
+    border: 1px solid white;
+    width: 9vw;
+    padding: 0.4vw;
+    padding-left: 1vw;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    margin-left: 2vw;
+}
+.aboutus-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.aboutus-section h2{
+    display: flex;
+    align-items: left;
+    font-size: 3.3vw;
+    color: white;
+    font-family: Inika;
+    letter-spacing: 14px;
+    margin: 12px;
+    padding: 20px;
+}
+.aboutus-section .aboutme{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.aboutus-section .aboutme .my-image{
+    background-image: url(../assets/332731019_947833123044260_3088160171402265000_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    padding: 0%;
+    margin-top: 90px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.aboutus-section .aboutme .my-image:hover{
+    box-shadow: 0px 4px 15px 3px #80CAFF;
+    border-color: #CAE9FF;
+    outline: none;
+}
+.aboutus-section ul{
+    list-style-type: none;
+    
+}
+.aboutus-section svg{
+    margin-right: 20px;
+    color: black;
+}
+.aboutus-section .aboutme .my-links{
+    margin-top: 60px;
+}
+.aboutus-section .aboutme-description{
+    margin-left: 22px;
+    margin-bottom: 22px;
+}
+.aboutus-section .about-section-link{
+    margin-left: 22px;
+}
+.signup-section{
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    min-width: 300px;
+    left: 65vw;
+    top: 10%;
+    border-radius: 25px;
+    flex-shrink: 1;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.signup-section h2{
+    margin: 15px;
+    margin-bottom: 0px;
+    margin-top: 28px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+.signup-section h4{
+    margin-top: 0px;
+    padding-top: 0px;
+    color: #606363;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
+.signup-section .google-login{
+    background-color: white;
+    margin-top: 24px;
+    width: 80%;
+    height: 40px;
+    min-width: 200px;
+    border-radius: 15px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 7px 4vw;
+}
+.google-login .google-logo{
+    justify-content: center;
+    align-self: center;
+    padding: 0; 
+    margin-right: 10px;
+}
+.google-login a{
+    text-decoration: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+.divison{
+    background-color: transparent;
+    margin-top: 20px;
+    width: 80%;
+    height: 2px;
+    min-width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+.divison {
+    /* Existing styles... */
+    position: relative; /* Add position relative to enable absolute positioning of pseudo-elements */
+  }
+  
+  .divison hr {
+    display: none; /* Hide the original hr element */
+  }
+  
+  .divison::before,
+  .divison::after {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Position the pseudo-elements absolutely */
+    top: 50%; /* Center the pseudo-elements vertically */
+    height: .01vw; /* Set the height of the pseudo-elements to create the line segments */
+    width: 40%; /* Adjust the width of each segment */
+    background-color: black; /* Adjust the color of the line segments */
+  }
+  
+  .divison::before {
+    left: 0; /* Position the first segment on the left */
+  }
+  
+  .divison::after {
+    right: 0; /* Position the second segment on the right */
+  }
+  
+.divison h5{
+    padding: 5px;
+    background: transparent;
+    width: 20%;
+    margin: 24px auto;
+    font-size: 17px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    margin: 18px;
+    width: 80%
+}
+.signup-form label{
+    display: flex;
+}
+.signup-form input{
+    display: flex;
+    margin: 7px;
+    margin-left: 0%;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.signup-form .signup-form-password{
+    margin-bottom: 0%;
+}
+.signup-form input[type="text"]:focus {
+    box-shadow: 0px 4px 15px 3px #80CAFF;
+    border-color: #CAE9FF;
+    outline: none;
+}
+.signup-form-terms{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.signup-form-terms input{
+    width:18px;
+    margin-right: 2px;
+    border: none;
+    color: #FFF;
+}
+.signup-form-terms input[type="checkbox"]:hover {
+    border: none;
+    box-shadow: 0px 4px 15px 3px #80CAFF;
+    border-color: #CAE9FF;
+    outline: none;
+}
+.signup-form-terms p{
+    font-size: 12px;
+    color: #000;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+.signup-form button{
+    display: flex;
+    margin: 7px;
+    margin-left: 0%;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    background-color: rgba(147, 129, 255, 0.61);
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: Inter;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.signup-form button:hover{
+    background-color: rgba(147, 129, 255, 1);
+    cursor: pointer;
+}  
+.signup-form .login-section{
+    text-align: center;
+} 
+.signup-form .login-section button{
+    display: inline;
+    width: 70px;
+    height:22px;
+    background-color: transparent;
+    padding: 0%;
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 786px) {
+    .main-landing-page{
+        overflow-x: auto;
+    }
+    .signup-section{
+        left: 100%;
+    }
+    .hero-section{
+        width: 90%;
+
+    }
+
+    .main-landing-page h1{
+        font-size: 44px;
+    }
+    .main-landing-page .hero-section p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .hero-footer-section{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .hero-footer-section a{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .main-landing-page .features-section h2{
+        font-size: 36px;
+    }
+    .main-landing-page .features-section li{
+        font-size: 16px;
+    }
+    .features-section a{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .features-section .pro-section-link {
+        width: 90px;
+        margin-bottom: 50px;
+    }
+    .aboutus-section h2{
+        margin: 0;
+    }
+    .aboutus-section .aboutme-description{
+        font-size: 10px;
+    }
+    .aboutus-section .aboutme{
+        gap: 5px;
+    }
+    .aboutus-section .about-section-link{
+        width: 90px;
+        
+    }
+} 

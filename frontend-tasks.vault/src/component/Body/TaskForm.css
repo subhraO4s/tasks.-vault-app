@@ -1,0 +1,297 @@
+body{
+    background-color:  #CAE9FF;
+    font-family: 'Catamaran', sans-serif;
+}
+.vertical-form-container{
+    box-shadow: 0 2px 20px 0 rgba(118, 120, 237, 0.2), 0 4px 20px 0 rgba(118, 120, 237, 0.2);
+    align-items: center;  
+    text-align: center;
+    width: 380px;
+    height: 550px; 
+    overflow: hidden;  
+    margin: auto;  
+    margin-top: 80px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;   
+    background: white;
+    border-radius: 15px ; 
+}
+.form-title{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color:rgb(6, 6, 6);
+}
+.vertical-form-container form{
+    position: relative;
+    top: 5px;
+    color: black;
+}
+.add-title{
+    padding-bottom: 15px;
+}
+
+.form-input{
+    text-align: center;
+    align-self: center;  
+    width: 300px;  
+    height: 44px;  
+    
+    border: 1px solid #97a2a9b8;
+    border-radius: 15px;  
+    padding-left: 0px;
+}
+input[type="text"]:focus {
+    box-shadow: 0px 4px 15px 3px #80CAFF;
+    border-color: #CAE9FF;
+    outline: none;
+}
+.add-description{
+    padding-bottom: 5px;
+}
+textarea[type = "description"]:focus{
+    box-shadow: 0px 4px 15px 3px #80CAFF;
+    border-color: #CAE9FF;
+    outline: none;
+}
+.form-description{
+    text-align: center; 
+    width: 300px;  
+    height: 66px;  
+    border: 1px solid #97a2a9b8; 
+    border-radius: 15px;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.add-slider{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+input[type = "range"]:focus{
+    border-color: #CAE9FF;
+    outline: none;
+}
+.form-slider{
+    text-align: center; 
+    width: 300px;  
+    height: 44px;  
+    border: 1px solid #CAE9FF;  
+    border-radius: 15px;  
+    padding-left: 0px;
+}
+
+.add-submit{
+    padding-top: 0px;
+    color: white;
+}
+.form-button{
+    text-align: center; 
+    width: 100px;  
+    height: 40px;   
+    border: none;  
+    border-radius: 8px;
+    background-color: rgba(127, 129, 229, 0.737);
+    color: white;
+    margin-right: 20px;
+}
+.close-button{
+    text-align: center; 
+    width: 100px;  
+    height: 40px;   
+    border: none; 
+    border-radius: 8px;
+    background-color: rgba(127, 129, 229, 0.737);
+    color: white;
+}
+
+/* hover style */
+
+.vertical-form-container:hover{
+    box-shadow: 0px 9px 18px 6px #80CAFF;
+}
+
+.close-button:hover{
+    background-color: rgba(118, 120, 237, 1);
+}
+.form-button:hover{
+    background-color: rgba(118, 120, 237, 1);
+}
+/* Date picker styles */
+.form-datepicker {
+    text-align: center;
+    width: 150px;
+    height: 44px;
+    border: 1px solid #97a2a9b8;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 0;
+    position: relative; /* Add this to position the custom input */
+  }
+  
+  /* Styling the date picker input field */
+  .form-datepicker input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer; /* Add this to indicate that the input is clickable */
+  }
+  
+  /* Styling the date picker dropdown icon */
+  .form-datepicker__triangle {
+    display: none;
+  }
+  
+  /* Styling the selected date text */
+  .form-datepicker__custom-input {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #97a2a9b8; /* Add color for the placeholder text */
+  }
+  
+  .form-datepicker__custom-input:focus {
+    box-shadow: 0px 4px 15px 3px #80CAFF;
+    border-color: #CAE9FF;
+  }
+  
+  /* Styling the date picker dropdown */
+  .react-datepicker__month-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px 0 rgba(118, 120, 237, 0.2), 0 4px 20px 0 rgba(118, 120, 237, 0.2);
+    padding: 10px;
+  }
+  
+  /* Styling the selected date in the dropdown */
+  .react-datepicker__day--keyboard-selected,
+  .react-datepicker__day--selected {
+    background-color: #80CAFF;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  /* Styling the date picker dropdown options */
+  .react-datepicker__day {
+    padding: 5px;
+    margin: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .react-datepicker__day:hover {
+    background-color: #80CAFF;
+    color: white;
+  }
+  
+  /* Styling the date picker dropdown header */
+  .react-datepicker__header {
+    background-color: #80CAFF;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Styling the date picker dropdown year dropdown menu */
+  .react-datepicker__year-dropdown {
+    font-size: 14px;
+  }
+  
+  /* Styling the date picker dropdown year options */
+  .react-datepicker__year-dropdown--scrollable {
+    height: 100px;
+    overflow-y: auto;
+  }
+  .form-dropdown {
+    text-align: center;
+    width: 150px;
+    height: 44px;
+    border: 1px solid #97a2a9b8;
+    border-radius: 15px;
+    padding: 0 0px; /* Add padding to create space for the dropdown arrow */
+    background-color: transparent;
+    appearance:none; /* Hide default arrow in Firefox */
+    -webkit-appearance: none; /* Hide default arrow in WebKit browsers */
+    outline: none;
+    cursor: pointer; /* Add cursor to indicate that the dropdown is clickable */
+    position: relative; /* Add this to position the custom select text */
+  }
+  
+  .form-dropdown::after {
+    /* Styling the dropdown arrow */
+    text-align: center;
+    content: "\25BC"; /* Unicode for downward arrow */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1892deb8; /* Arrow color */
+    font-size: 14px; /* Arrow size */
+  }
+  
+  /* Styling the selected option text in the dropdown */
+  .form-dropdown option:checked {
+    color:#80CAFF; /* Add color for the selected option text */
+  }
+  
+  /* Styling the dropdown options */
+  .form-dropdown option {
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Styling the dropdown when open */
+  .form-dropdown:focus {
+    box-shadow: 0px 4px 15px 3px #80CAFF;
+    border-color: #CAE9FF;
+  }
+  
+  /* Styling the dropdown options when hovered */
+
+  .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .add-due-date {
+    flex: 1;
+    padding-right: 10px;
+    margin-left: 12px;
+  }
+  .form-label-input{
+    text-align: center;
+    
+    width: 130px;
+    height: 44px;
+    border: 1px solid #97a2a9b8;
+    border-radius: 15px;
+    padding: 0 20px; /* Add padding to create space for the dropdown arrow */
+    background-color: transparent;
+    appearance: none; /* Hide default arrow in Firefox */
+    -webkit-appearance: none; /* Hide default arrow in WebKit browsers */
+    outline: none;
+    cursor: pointer; /* Add cursor to indicate that the dropdown is clickable */
+    position: relative; 
+  }
+  .form-label-input::placeholder {
+    color:#80caffa0;
+  }
+  .add-label {
+    flex: 1;
+
+    margin-right: 10px;
+  }

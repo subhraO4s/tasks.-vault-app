@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+/* Apply the Catamaran font family to the body element */
+body {
+  font-family: 'Catamaran', sans-serif;
+}
+.body {
+    display: flex;
+    position: fixed;
+    inset: 17% 20% 5% 8%;
+  }
+  
+  /* Styling the card container */
+  .card-container { 
+    margin-right: 0;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 17% 20% 5% 8%;
+  }
+  
+  /* Styling the heading "Tasks" */
+  .card-container h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  
+  /* Creating a card layout using flexbox */
+  .cards {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    height: 55vh; 
+    overflow: auto;
+     
+  }
+
+
+  /* Styling individual cards */
+  .card {
+    width: calc(33% - 10px); 
+    display: flex;
+    flex-direction:column;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 35px 3px rgba(36, 0, 70, 0.07);
+    background-color: white;
+    transition: 0.8s ease;
+    height: fit-content;
+
+    position:relative;
+  }
+  .card:hover{
+    box-shadow: 0px 9px 18px 6px #80CAFF;
+}
+
+
+  .card h2 {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    margin-left: 16px;
+  }
+  
+  .card p {
+    font-size: 12px;
+    color: #555;
+    margin-left: 10px;
+    min-height: 60px;
+  }
+  .due-date-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .label-item {
+    display: flex;
+    align-items: center;
+    background-color: #7678ED;
+    color: white;
+    border: none;
+    padding: 0px 7px;
+    border-radius: 12px;
+    margin-left: 10px;
+    font-size: .8vw;
+  }
+  .edit-delete-item{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0px 7px;
+    border-radius: 12px;
+    margin-left: 10px;
+    font-size: .8vw;
+    gap: 7px;
+  }
+  .edit-delete-item .edit-button,
+  .edit-delete-item .delete-button{
+    background-color:#7678ED;
+    border: 2px solid;
+    border-radius: 6px;
+    border-color: #7678ED;
+    color: white;
+  }
+  .edit-delete-item .edit-button:hover,
+  .edit-delete-item .delete-button:hover{
+    background-color: rgba(100, 103, 255, 0.811);
+  }
+
+  .label-item span {
+    margin-left: 2.5px;
+    padding-top: 2px;
+  }
+  
+  /* Additional styles for icons */
+  svg {
+    vertical-align: middle;
+    padding: 2px 0px;
+  }
+
+  .carousel-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-top: .1vw ;
+  }
+  
+  .carousel-navigation button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    background-color: rgba(127, 129, 229, 0.737);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .carousel-navigation button:hover {
+    background-color: rgba(118, 120, 237, 1);
+  }
+  .carousel-navigation button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .cards::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  .cards::-webkit-scrollbar-thumb {
+    background-color: rgba(118, 120, 237, 0.551);
+    border-radius: 4px; 
+  }
+  
+  .cards::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(118, 120, 237, 1); 
+  }
+  
+  .cards::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  
+
+/* Styling the slider container */
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin-top: 7px; 
+    margin-bottom: 7px; 
+  }
+  
+  .slider-container label {
+    margin-right: 10px;
+  }
+  
+  
+  /* Styling the slider track and thumb */
+  .slider-container input[type="range"] {
+    flex: 1;
+    height: 4px; 
+    width: 100%; 
+    margin-right: 10px;
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+    appearance: none; 
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  .slider-container input[type="range"]::-webkit-slider-thumb {
+    appearance: none; 
+    height: 16px;
+    width: 16px; 
+    background-color: #7678ED; 
+    border-radius: 50%; 
+    cursor: pointer; 
+  }
+  
+
+  .slider-container input[type="range"]::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    background-color: #7678ED;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slider-container input[type="range"]::-ms-thumb {
+    height: 16px;
+    width: 16px;
+    background-color: #80CAFF;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slider-container span {
+    font-weight: bold;
+  }
+
+.multi-select{
+  position: absolute;
+  align-items: center;
+  top: 18px; 
+  left: 9px; 
+  font-size: .85vw;
+  gap: 5px;
+}
+  .labels {
+    display: flex;
+    align-items: center;
+    font-size: .85vw;
+    flex-shrink: 0;
+  }
+  .task-title {
+    flex: 1; /* Allow title to grow and take up available space */
+    white-space: nowrap; /* Prevent title from breaking to a new line */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis for truncated text */
+    width: fit-content;
+  }
+  .labels span{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 8px;
+    background-color: #7678ED;
+    color: white;
+    font-size: 10px;
+    font-weight: 100;
+    border-radius: 5px;
+  }
+  .like-button {
+    position: absolute;
+    top: 5px; 
+    right: 5px; 
+    color: transparent;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  width: 12px;
+}
+
+.like-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+
+.tasks-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-right: 40px;
+  }
+  
+  /* Styling the "Create Task" button */
+  .create-task-button button {
+    background-color: rgb(117, 119, 232);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+  }
+  .create-task-button a {
+    text-decoration: none;
+  } 
+  .create-task-button button svg {
+    margin-right: 5px; 
+  }
+  
+  .create-task-button button:hover {
+    background-color: rgba(100, 103, 255, 0.811);
+  }
+
+  @media (max-width: 768px) {
+    
+    .cards {
+      /* Change the flexbox layout for mobile */
+      flex-direction: row;
+    }
+    
+    .card {
+      /* Adjust card width and margin for mobile */
+      width: 100%;
+      margin-bottom: 15px;
+      height: fit-content;
+    }
+    .card-container{
+
+      width: 70px;;
+      margin-left: 0px;
+    }
+    /* Additional styles for individual cards in mobile view */
+    .card h2 {
+      /* Adjust font size for mobile */
+      font-size: 16px;
+    }
+  
+    .card p {
+      /* Adjust font size for mobile */
+   
+      font-size: 10px;
+    }
+    .tasks-header{
+      margin:0;
+    }
+    /* Styles for the "Create Task" button in mobile view */
+    .create-task-button {
+      text-align: center;
+      margin-top: 0px;
+      
+    }
+  
+    .create-task-button button {
+      /* Adjust padding and font size for mobile */
+      padding: 0px;
+      font-size: 10px;
+      width:90px;
+      height: 40px;
+      gap:0;
+    }
+    .create-task-button button svg{
+      margin:0;
+    }
+    /* Styles for the carousel navigation in mobile view */
+    .carousel-navigation {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .carousel-navigation button {
+      /* Adjust padding and font size for mobile */
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  
+    /* Styles for the slider container in mobile view */
+    .slider-container label {
+      /* Adjust margin for mobile */
+      margin-right: 5px;
+    }
+  
+    .slider-container input[type="range"] {
+      /* Adjust height for mobile */
+      height: 3px;
+    }
+  
+    .slider-container input[type="range"]::-webkit-slider-thumb,
+    .slider-container input[type="range"]::-moz-range-thumb,
+    .slider-container input[type="range"]::-ms-thumb {
+      /* Adjust size of the slider thumb for mobile */
+      height: 12px;
+      width: 12px;
+    }
+  
+    .slider-container span {
+      /* Adjust font size for mobile */
+      font-size: 10px;
+    }
+  
+    /* Styles for the like button in mobile view */
+    .labels,
+    .like-button {
+      /* Adjust font size for mobile */
+      font-size: 10px;
+    }
+  }
+  .card-container {
+    /* Existing styles... */
+  
+    /* New styles for responsiveness */
+   @media (max-width: 1024px) {
+      min-width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  
+    @media (max-width: 768px) {
+      display: flex;
+      min-width: 85.5%;
+      margin-left: 12px;
+      border-radius: 25px; /* Remove border radius for mobile view */
+      box-shadow: none; /* Remove box shadow for mobile view */
+    }
+  }

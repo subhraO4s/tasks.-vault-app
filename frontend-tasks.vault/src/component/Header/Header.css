@@ -1,0 +1,94 @@
+.header {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    inset: 0 95% 0 0;
+    background: linear-gradient(120deg, #051923 0%, #3C096C 100%);
+}
+
+nav .ul-item {
+    display: flex;
+    flex-direction: column;
+    margin-block: 5rem;
+    list-style: none;
+    margin-top: 9rem;
+}
+
+nav .ul-item li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    padding-block: .2rem;
+    padding-top: .4rem;
+    margin-block: .4rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    border-radius: 20%;
+}
+
+nav .ul-item li:hover {
+    background-color: #3d97d6;
+    border-radius: 20%;
+    transition: 1.5s ease;
+}
+
+nav .ul-item li .icon {
+    color: #CAE9FF;
+    margin: 7px;
+    font-size: 25px;
+}
+
+nav .ul-item li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #CAE9FF;
+    border-left: 0px solid #CAE9FF;
+    margin: 10px;
+}
+
+.menu-icon {
+    margin-inline: 1rem;
+}
+
+
+.menu-icon .menu {
+    color: #CAE9FF;
+    margin-block: 1rem;
+    cursor: pointer;
+    font-size: 25px;
+   
+}
+
+
+@media (max-width:750px) {
+    .header {
+        inset: 0 92% 0 0;
+        justify-content: center;
+    }
+
+    nav .ul-item{
+        display: flex;
+    }
+    .menu-icon {
+        display: none;
+    }
+    nav .ul-item li .icon {
+        font-size: clamp(1rem, 2vw + 1rem, 4rem);
+    }
+    nav .ul-item li:hover{
+        background-color: transparent;
+    }
+    nav .ul-item li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+        padding-block: .03rem;
+        padding-top: .4rem;
+        margin-block: .4rem;
+        margin-top: 2.6rem;
+        justify-content: center;
+    }
+}    
