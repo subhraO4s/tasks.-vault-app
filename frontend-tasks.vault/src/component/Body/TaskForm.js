@@ -36,7 +36,7 @@ const TaskForm = ({onClose}) => {
       const token = await user.getIdToken();
   
       try {
-        const response = await fetch(`http://localhost:5000/task/${taskId}`, {
+        const response = await fetch(`https://tasks-vault-app.vercel.app/task/${taskId}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -96,7 +96,7 @@ const TaskForm = ({onClose}) => {
       setLabel("");
 
       try {
-        const response = await fetch("http://localhost:5000/task", {
+        const response = await fetch("https://tasks-vault-app.vercel.app/task", {
           method: "POST",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -139,7 +139,7 @@ const TaskForm = ({onClose}) => {
       };
 
       try {
-        const response = await fetch(`http://localhost:5000/task/${taskId}`, {
+        const response = await fetch(`https://tasks-vault-app.vercel.app/task/${taskId}`, {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${token}`,

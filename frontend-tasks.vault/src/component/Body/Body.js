@@ -21,7 +21,7 @@ const Body = ({ searchResults, showOnlyFav }) => {
         setLoading(true);
         if (storedToken) {
           try {
-            const response = await fetch("http://localhost:5000/tasks", {
+            const response = await fetch("https://tasks-vault-app.vercel.app/tasks", {
               method: "GET",
               headers: {
                 Authorization: `Bearer ${storedToken}`,
@@ -110,7 +110,7 @@ const Body = ({ searchResults, showOnlyFav }) => {
       const storedToken = localStorage.getItem('authToken');
       if (storedToken){
         try {
-          const response = await fetch(`http://localhost:5000/task/${taskId}`, {
+          const response = await fetch(`https://tasks-vault-app.vercel.app/task/${taskId}`, {
             method: 'DELETE',
             headers: {
               Authorization: `Bearer ${storedToken}`,

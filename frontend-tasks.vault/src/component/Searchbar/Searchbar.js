@@ -31,7 +31,7 @@ const Searchbar = ({ onSearchResults}) => {
       event.preventDefault();
   
       try {
-        const response = await fetch(`http://localhost:5000/search?searchQuery=${searchQuery}&searchOption=${searchOption}`, {
+        const response = await fetch(`https://tasks-vault-app.vercel.app/search?searchQuery=${searchQuery}&searchOption=${searchOption}`, {
             method: 'GET',
             headers: {
               Authorization: `Bearer ${storedToken}`,

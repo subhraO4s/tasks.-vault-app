@@ -40,7 +40,7 @@ const CarouselItem = ({ task, onLikeClick, onSliderChange, selected, onSelect,on
 
     if (token) {
       try {
-        const response = await fetch(`http://localhost:5000/task/${task.task_id}`, {
+        const response = await fetch(`https://tasks-vault-app.vercel.app/task/${task.task_id}`, {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -78,7 +78,7 @@ const CarouselItem = ({ task, onLikeClick, onSliderChange, selected, onSelect,on
 
     if (token) {
       try {
-        const response = await fetch(`http://localhost:5000/task/${task.task_id}`, {
+        const response = await fetch(`https://tasks-vault-app.vercel.app/${task.task_id}`, {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${token}`,

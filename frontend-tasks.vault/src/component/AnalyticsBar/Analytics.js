@@ -18,7 +18,7 @@ const Analytics = () => {
   
       if (storedToken) {
         try {
-          const response = await fetch("http://localhost:5000/tasks", {
+          const response = await fetch("https://tasks-vault-app.vercel.app/tasks", {
             method: "GET",
             headers: {
               Authorization: `Bearer ${storedToken}`,
