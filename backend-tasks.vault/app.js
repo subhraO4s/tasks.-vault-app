@@ -5,8 +5,14 @@ const admin = require('firebase-admin');
 const Task = require('./taskSchema');
 const connectToDatabase = require('./db');
 const authenticate = require('./authenticate');
-const serviceAccount = require('../backend-tasks.vault/accountkey/tasks-vault-firebase-adminsdk-tu0q0-70f366c03a.json');
 const { v4: uuidv4 } = require('uuid');
+
+let serviceAccount = null;
+try {
+  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+} catch (error) {
+  console.error('Error parsing FIREBASE_SERVICE_ACCOUNT:', error);
+}
 
 const app = express();
 const port = 5000;
@@ -14,7 +20,7 @@ const port = 5000;
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
-const MONGO_URI = 'mongodb+srv://admin:cqgOfllQCNl0Ts1F@tasks-cluster.0wuq232.mongodb.net/?retryWrites=true&w=majority';
+const MONGO_URI = process.env.MONGO_URI;
 
 connectToDatabase(MONGO_URI);
 
