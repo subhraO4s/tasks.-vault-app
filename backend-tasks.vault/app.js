@@ -24,7 +24,7 @@ const MONGO_URI = process.env.MONGO_URI;
 
 connectToDatabase(MONGO_URI);
 
-// app.use(cors());
+app.use(cors());
 app.use(bodyParser.json());
 
 //get all tasks
