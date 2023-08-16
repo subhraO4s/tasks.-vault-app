@@ -27,6 +27,17 @@ connectToDatabase(MONGO_URI);
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/', async (req, res) => {
+  try {
+    const tasks = {
+      title: "jai bharat",
+    };
+    res.json(tasks);
+  } catch (error) {
+    res.status(500).json({ error: 'An error occurred' });
+  }
+});
+
 //get all tasks
 app.get('/tasks', authenticate, async (req, res) => {
   try {
