@@ -48,7 +48,7 @@ const LandingPage = () => {
             await firebase.auth().signInWithPopup(provider);
             const user = firebase.auth().currentUser;
             const token = await user.getIdToken();
-
+            console.log(token);
             const displayName = user.providerData[0]?.displayName || 'User'; // Use provider display name if available
             await user.updateProfile({
                 displayName: displayName
