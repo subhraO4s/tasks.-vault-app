@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const taskSchema = new mongoose.Schema({
   user_id: { type: String, required: true },
@@ -12,6 +12,5 @@ const taskSchema = new mongoose.Schema({
   // Add more fields if needed
 });
 
-const Task = mongoose.model('Task', taskSchema);
-
-module.exports = Task;
+const Task = mongoose.model("Task", taskSchema);
+export default Task;
